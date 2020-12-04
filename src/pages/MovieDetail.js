@@ -50,6 +50,9 @@ const MovieDetail = () => {
 
 const Details = styled(motion.div)`
   color: white;
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+  }
 `;
 
 const HeadLine = styled.div`
@@ -61,11 +64,17 @@ const HeadLine = styled.div`
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
+    @media (max-width: 1300px) {
+      margin-bottom: 5rem;
+    }
   }
   img {
     width: 100%;
     height: 70vh;
     object-fit: cover;
+    @media (max-width: 1300px) {
+      margin-top: 5rem;
+    }
   }
 `;
 
@@ -103,6 +112,12 @@ const ImageDisplay = styled.div`
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    @media (max-width: 1300px) {
+      width: 100%;
+      height: auto;
+      /* Magic! */
+      /* max-width: 100vw; */
+    }
   }
 `;
 
