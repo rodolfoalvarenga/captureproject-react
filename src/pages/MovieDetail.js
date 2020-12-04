@@ -115,8 +115,6 @@ const ImageDisplay = styled.div`
     @media (max-width: 1300px) {
       width: 100%;
       height: auto;
-      /* Magic! */
-      /* max-width: 100vw; */
     }
   }
 `;
